@@ -19,7 +19,7 @@ layers:
   - F
   - G
   - TAB
-  - H
+  - Sft+MINUS
   - H
   - J
   - K
@@ -120,11 +120,11 @@ layers:
   - B
   Num:
   - CAPS
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - F4
+  - Sft+2
+  - Sft+6
+  - Sft+8
+  - Sft+9
   - '6'
   - KP PLUS
   - '7'
