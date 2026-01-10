@@ -1,52 +1,52 @@
 layout: {zmk_keyboard: MKB}
 layers:
   Def:
-  - TAB
   - Q
   - W
   - E
   - R
   - T
+  - ESC
+  - DELETE
   - Y
   - U
   - I
   - O
   - P
-  - BKSP
-  - {t: ESC, h: BT}
   - A
   - S
   - D
   - F
   - G
+  - TAB
+  - H
   - H
   - J
   - K
   - L
-  - SEMI
-  - {t: SQT, h: Mouse}
-  - LSHFT
-  - Z
+  - {t: MINUS, h: Mouse}
+  - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
   - B
+  - LEFT SHIFT
+  - N
   - N
   - M
   - COMMA
   - DOT
-  - UP
-  - FSLH
-  - {t: ESC, h: LCTL}
+  - Sft+INT RO
+  - LCTRL
   - LGUI
   - LALT
   - {t: SPACE, h: Num}
   - {t: SPACE, h: Fnc}
-  - {t: SPACE, h: Fnc}
-  - {t: SPACE, h: Num}
-  - LEFT
-  - DOWN
-  - RIGHT
+  - {t: BACKSPACE, h: Fnc}
+  - {t: ENTER, h: Num}
+  - SEMICOLON
+  - RIGHT SHIFT
+  - DEL
   - LEFT
   - UP
   - SPACE
@@ -126,11 +126,11 @@ layers:
   - '4'
   - '5'
   - '6'
+  - KP PLUS
   - '7'
   - '8'
   - '9'
-  - '0'
-  - {t: ▽, type: trans}
+  - KP MINUS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -138,11 +138,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - MINUS
-  - EQUAL
-  - LBKT
-  - RBKT
-  - BSLH
-  - {t: ▽, type: trans}
+  - KP MULTIPLY
+  - '4'
+  - '5'
+  - '6'
+  - KP SLASH
   - {t: SPACE, h: LSHFT}
   - BACKSPACE
   - DEL
@@ -150,10 +150,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - FSLH
-  - SEMI
-  - SQT
-  - {t: ▽, type: trans}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
@@ -308,7 +308,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -354,3 +354,8 @@ layers:
   - END
   - A
   - B
+combos:
+- p: [0, 1]
+  k: ESCAPE
+- p: [12, 13]
+  k: TAB
