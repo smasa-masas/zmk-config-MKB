@@ -7,7 +7,7 @@ layers:
   - R
   - T
   - ESC
-  - DELETE
+  - BT
   - Y
   - U
   - I
@@ -66,11 +66,11 @@ layers:
   - PG DN
   - HOME
   - {t: ▽, type: trans}
-  - F1
+  - {t: ▽, type: trans}
   - F2
-  - F3
-  - F4
-  - F5
+  - Ctl+PAGE UP
+  - UP ARROW
+  - Ctl+PAGE DOWN
   - {t: ▽, type: trans}
   - '&tog_ls'
   - LEFT
@@ -78,11 +78,11 @@ layers:
   - RIGHT
   - END
   - {t: ▽, type: trans}
-  - F6
+  - {t: ▽, type: trans}
   - F7
-  - F8
-  - F9
-  - F10
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BKSP
@@ -99,10 +99,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LALT
-  - ENTER
-  - {t: ENTER, type: held}
-  - ENTER
-  - ENTER
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -143,9 +143,9 @@ layers:
   - '5'
   - '6'
   - KP SLASH
-  - {t: SPACE, h: LSHFT}
-  - BACKSPACE
-  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -157,9 +157,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
-  - ENTER
-  - {t: ENTER, type: held}
-  - ENTER
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
   - ENTER
   - ENTER
   - {t: ▽, type: trans}
@@ -175,7 +175,7 @@ layers:
   - ENTER
   - PG DN
   - END
-  - A
+  - {t: ▽, type: trans}
   - B
   Mouse:
   - {t: ▽, type: trans}
@@ -302,13 +302,13 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BT CLR ALL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -359,3 +359,5 @@ combos:
   k: ESCAPE
 - p: [12, 13]
   k: TAB
+- p: [10, 11]
+  k: DELETE
