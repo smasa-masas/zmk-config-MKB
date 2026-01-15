@@ -46,16 +46,16 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp Q             &kp W     &kp E      &kp R     &kp T          &kp ESC             &mo 5               &kp Y          &kp U      &kp I          &kp O            &kp P
-&kp A             &kp S     &kp D      &kp F     &kp G          &kp TAB             &kp LS(MINUS)       &kp H          &kp J      &kp K          &kp L            &lt MOUSE MINUS
-&mt LEFT_SHIFT Z  &kp X     &kp C      &kp V     &kp B          &kp LANGUAGE_1      &kp LANGUAGE_2      &kp N          &kp M      &kp COMMA      &kp DOT          &kp LS(INT_RO)
-&kp LCTRL         &kp LGUI  &kp LALT             &lt NUM SPACE  &lt FUNC SPACE      &lt FUNC BACKSPACE  &lt NUM ENTER             &kp SEMICOLON  &kp RIGHT_SHIFT  &kp DEL
-&kp LEFT          &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                              &kp HOME       &kp PG_UP  &kp ENTER      &kp PG_DN        &kp END
-                                       &kp A                                                                           &kp B
+&kp Q             &kp W           &kp E      &kp R     &kp T          &kp LEFT_SHIFT        &mo 5               &kp Y           &kp U         &kp I          &kp O            &kp P
+&kp A             &kp S           &kp D      &kp F     &kp G          &kp LEFT_CONTROL      &kp LS(MINUS)       &kp H           &kp J         &kp K          &kp L            &lt MOUSE MINUS
+&mt LEFT_SHIFT Z  &kp X           &kp C      &kp V     &kp B          &kp LANGUAGE_1        &kp LANGUAGE_2      &kp N           &kp M         &kp COMMA      &kp DOT          &kp LS(INT_RO)
+&kp LCTRL         &lt 1 LEFT_WIN  &kp LALT             &lt NUM SPACE  &lt FUNC SPACE        &lt FUNC BACKSPACE  &lt NUM ENTER                 &kp SEMICOLON  &kp RIGHT_SHIFT  &kp DEL
+&kp LEFT          &kp UP          &kp SPACE  &kp DOWN  &kp RIGHT                                                &kp LEFT_ARROW  &kp UP_ARROW  &kp ENTER      &kp DOWN_ARROW   &kp RIGHT_ARROW
+                                             &kp A                                                                              &kp B
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LC(HOME) LC(END)>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
                 <&inc_dec_kp PG_UP PG_DN>;
         };
 
