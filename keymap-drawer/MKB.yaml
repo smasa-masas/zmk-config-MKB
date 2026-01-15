@@ -6,7 +6,7 @@ layers:
   - E
   - R
   - T
-  - ESC
+  - LEFT SHIFT
   - BT
   - Y
   - U
@@ -18,7 +18,7 @@ layers:
   - D
   - F
   - G
-  - TAB
+  - LEFT CONTROL
   - Sft+MINUS
   - H
   - J
@@ -38,7 +38,7 @@ layers:
   - DOT
   - Sft+INT RO
   - LCTRL
-  - LGUI
+  - {t: LEFT WIN, h: Fnc}
   - LALT
   - {t: SPACE, h: Num}
   - {t: SPACE, h: Fnc}
@@ -52,11 +52,11 @@ layers:
   - SPACE
   - DOWN
   - RIGHT
-  - HOME
-  - PG UP
+  - LEFT ARROW
+  - UP ARROW
   - ENTER
-  - PG DN
-  - END
+  - DOWN ARROW
+  - RIGHT ARROW
   - A
   - B
   Fnc:
@@ -97,10 +97,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - LALT
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
