@@ -52,11 +52,11 @@ layers:
   - SPACE
   - DOWN
   - RIGHT
-  - LEFT ARROW
   - UP ARROW
+  - LEFT ARROW
   - ENTER
-  - DOWN ARROW
   - RIGHT ARROW
+  - DOWN ARROW
   - A
   - B
   Fnc:
