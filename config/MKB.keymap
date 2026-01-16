@@ -21,6 +21,16 @@
 };
 
 / {
+    /* 1. behaviorsを正しい位置（combosの外）に配置 */
+    behaviors {
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <30>; 
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -38,17 +48,7 @@
             bindings = <&kp DELETE>;
             key-positions = <10 11>;
         };
-    
-    
-　　behaviors {
-        scroll_encoder: scroll_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <30>; 
-        };
     };
-   };
 
     keymap {
         compatible = "zmk,keymap";
@@ -64,9 +64,7 @@
                                              &kp A                                                                             &kp B
             >;
 
-            sensor-bindings =
-                 <&scroll_encoder>,   /* 左のエンコーダーをスクロールに */
-                <&scroll_encoder>;   /* 右のエンコーダーもスクロールに */
+            sensor-bindings = <&scroll_encoder>, <&scroll_encoder>;
         };
 
         function_layer {
@@ -80,8 +78,7 @@
                                  &kp A                                                &kp B
             >;
 
-            sensor-bindings =  <&scroll_encoder>,   /* 左のエンコーダーをスクロールに */
-                <&scroll_encoder>;   /* 右のエンコーダーもスクロールに */
+            sensor-bindings = <&scroll_encoder>, <&scroll_encoder>;
         };
 
         num_layer {
@@ -95,8 +92,8 @@
                                  &trans                                                                    &kp B
             >;
 
-            sensor-bindings =  <&scroll_encoder>,   /* 左のエンコーダーをスクロールに */
-                <&scroll_encoder>;   /* 右のエンコーダーもスクロールに */
+            sensor-bindings = <&scroll_encoder>, <&scroll_encoder>;
+        }; /* 2. num_layerを閉じるカッコを追加 */
 
         mouse_layer {
             label = "Mouse";
@@ -109,8 +106,7 @@
                              &kp A                                              &kp B
             >;
 
-            sensor-bindings =  <&scroll_encoder>,   /* 左のエンコーダーをスクロールに */
-                <&scroll_encoder>;   /* 右のエンコーダーもスクロールに */
+            sensor-bindings = <&scroll_encoder>, <&scroll_encoder>;
         };
 
         scroll_layer {
@@ -124,8 +120,7 @@
                              &kp A                                              &kp B
             >;
 
-            sensor-bindings =  <&scroll_encoder>,   /* 左のエンコーダーをスクロールに */
-                <&scroll_encoder>;   /* 右のエンコーダーもスクロールに */
+            sensor-bindings = <&scroll_encoder>, <&scroll_encoder>;
         };
 
         bt_layer {
@@ -139,8 +134,7 @@
                                             &kp A                                                           &kp B
             >;
 
-            sensor-bindings =  <&scroll_encoder>,   /* 左のエンコーダーをスクロールに */
-                <&scroll_encoder>;   /* 右のエンコーダーもスクロールに */
+            sensor-bindings = <&scroll_encoder>, <&scroll_encoder>;
         };
     };
 };
