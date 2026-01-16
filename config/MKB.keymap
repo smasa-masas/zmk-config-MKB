@@ -22,12 +22,14 @@
 
 / {
     /* 1. behaviorsを正しい位置（combosの外）に配置 */
+
     behaviors {
         scroll_encoder: scroll_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <30>; 
+
+            tap-ms = <30>;
         };
     };
 
@@ -56,11 +58,11 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp Q             &kp W           &kp E      &kp R     &kp T          &kp LEFT_SHIFT        &mo 5               &kp Y          &kp U           &kp I          &kp O            &kp P
-&kp A             &kp S           &kp D      &kp F     &kp G          &kp LEFT_CONTROL      &kp LS(MINUS)       &kp H          &kp J           &kp K          &kp L            &lt MOUSE MINUS
-&mt LEFT_SHIFT Z  &kp X           &kp C      &kp V     &kp B          &kp LANGUAGE_1        &kp LANGUAGE_2      &kp N          &kp M           &kp COMMA      &kp DOT          &kp LS(INT_RO)
-&kp LCTRL         &lt 1 LEFT_WIN  &kp LALT             &lt NUM SPACE  &lt FUNC SPACE        &lt FUNC BACKSPACE  &lt NUM ENTER                  &kp SEMICOLON  &kp RIGHT_SHIFT  &kp DEL
-&kp LEFT          &kp UP          &kp SPACE  &kp DOWN  &kp RIGHT                                                &kp UP_ARROW   &kp LEFT_ARROW  &kp ENTER      &kp RIGHT_ARROW  &kp DOWN_ARROW
+&kp Q             &kp W           &kp E      &kp R     &kp T          &kp LEFT_SHIFT        &mo 5               &kp Y          &kp U      &kp I          &kp O            &kp P
+&kp A             &kp S           &kp D      &kp F     &kp G          &kp LEFT_CONTROL      &kp LS(MINUS)       &kp H          &kp J      &kp K          &kp L            &lt MOUSE MINUS
+&mt LEFT_SHIFT Z  &kp X           &kp C      &kp V     &kp B          &kp LANGUAGE_1        &kp LANGUAGE_2      &kp N          &kp M      &kp COMMA      &kp DOT          &kp LS(INT_RO)
+&kp LCTRL         &lt 1 LEFT_WIN  &kp LALT             &lt NUM SPACE  &lt FUNC SPACE        &lt FUNC BACKSPACE  &lt NUM ENTER             &kp SEMICOLON  &kp RIGHT_SHIFT  &kp DEL
+&kp LEFT          &kp UP          &kp SPACE  &kp DOWN  &kp RIGHT                                                &kp UP_ARROW   &kp RIGHT  &kp ENTER      &kp LEFT_ARROW   &kp DOWN_ARROW
                                              &kp A                                                                             &kp B
             >;
 
@@ -94,7 +96,6 @@
 
             sensor-bindings = <&scroll_encoder>, <&scroll_encoder>;
         }; /* 2. num_layerを閉じるカッコを追加 */
-
         mouse_layer {
             label = "Mouse";
             bindings = <
