@@ -38,7 +38,7 @@
             bindings = <&kp DELETE>;
             key-positions = <10 11>;
         };
-    };
+    
     
 　　behaviors {
         scroll_encoder: scroll_encoder {
@@ -48,6 +48,7 @@
             tap-ms = <30>; 
         };
     };
+   };
 
     keymap {
         compatible = "zmk,keymap";
