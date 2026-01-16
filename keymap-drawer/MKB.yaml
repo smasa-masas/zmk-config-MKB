@@ -53,9 +53,9 @@ layers:
   - DOWN
   - RIGHT
   - UP ARROW
-  - LEFT ARROW
+  - RIGHT
   - ENTER
-  - RIGHT ARROW
+  - LEFT ARROW
   - DOWN ARROW
   - A
   - B
